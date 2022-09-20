@@ -45,9 +45,7 @@ EOF
 
     retries=30
     while [ $retries -ge 0 ]; do
-      resp=$(nomad operator api -dryrun -X POST /v1/acl/bootstrap)
-      echo $resp
-      echo $resp | jq -r '.SecretID' > /tmp/nomad-test.token && break
+      nomad acl bootstrap -json | jq -r '.SecretID' > /tmp/nomad-test.token && break
       sleep 5
       retries=$(( $retries - 1 ))
     done
