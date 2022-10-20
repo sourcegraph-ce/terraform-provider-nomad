@@ -343,7 +343,7 @@ func TestResourceJob_json(t *testing.T) {
 			},
 		},
 
-		CheckDestroy: testResourceJob_checkDestroy("foo-json"),
+		CheckDestroy: testResourceJob_checkDestroy("foo-json-root"),
 	})
 
 	// Test plain jobspec.
@@ -975,8 +975,8 @@ resource "nomad_job" "test" {
 {
   "Job": {
     "Datacenters": [ "dc1" ],
-    "ID": "foo-json",
-    "Name": "foo-json",
+    "ID": "foo-json-root",
+    "Name": "foo-json-root",
     "Type": "service",
     "TaskGroups": [
       {
