@@ -6,7 +6,7 @@ package nomad
 import (
 	"encoding/json"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"reflect"
 	"sort"
 	"strconv"

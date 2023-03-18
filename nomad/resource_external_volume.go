@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 	"hash/crc32"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"github.com/dustin/go-humanize"
 	"github.com/hashicorp/nomad/api"

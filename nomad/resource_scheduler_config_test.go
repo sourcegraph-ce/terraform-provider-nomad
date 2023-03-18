@@ -4,7 +4,7 @@
 package nomad
 
 import (
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"testing"
 
 	"github.com/hashicorp/nomad/api"
