@@ -5,7 +5,7 @@ package nomad
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"strconv"
 
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
